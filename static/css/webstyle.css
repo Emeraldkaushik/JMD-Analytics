@@ -1,0 +1,492 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+/* header */
+
+/*navbar*/
+.navbar{
+  background-color: #ffff!important;
+  box-shadow: 0px 1px 10px #999;
+}
+.navbar-brand{
+	font-family: 'Alata', sans-serif;
+  letter-spacing: 1px;
+	font-size:35px;
+  color: #fc9852!important;
+}
+
+
+
+.nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:  #fc9852!important;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  color: #fc9952e7!important;
+}
+
+
+.menu-right-btn{
+	padding: 10px 30px;
+	margin-left: 4%;
+  border-color: #fc9852;
+  color: #fc9852;
+	background:transparent;
+	border-radius: 0!important;
+	transition: all 300ms ease-in;
+}
+.menu-right-btn:hover{
+	background: #fc9852!important;
+  color: #ffff;
+	border-color: #ffff; 
+}
+
+/* slider*/
+.carousel{
+    margin-top: 80px;
+}
+/* .carousel .carousel-item {
+    height: 90vh;
+  }
+   */
+  .carousel-item img {
+      height: 100%;
+  }
+  .carousel-caption{
+      margin-bottom: 200px;
+  }
+  .carousel .carousel-caption .h5{
+    font-weight: 1000 !important;
+    letter-spacing: 10px;
+  }
+
+
+  /* about */
+
+  .about-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px -6px rgba(0,0,0,0.75);
+    /* box-shadow: 10px 10px 30px -28px rgba(0,0,0,0.75); */
+  }
+  .left{
+    flex: 0.7;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff9933;
+   font-size: 18px;
+  }
+  .right{
+    text-align: center;
+    flex: 0.3;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ff9933;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .right img{
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  /* underline in heading */
+  .container .top-title{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  .container .top-title h1{
+    position: relative;
+    width: fit-content;
+    height: auto;
+  }
+  .container .top-title h1::before{
+    content: '';
+    position:absolute;
+    background-color: #ff9933;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left:0;
+  }
+  /* services */
+  /* img{
+    background-color:  #ff9933;
+    border-radius: 50%;
+  } */
+  /*work */
+#work{
+    padding-top:40px ;
+    padding-bottom: 30px;
+    height: 800px;
+}
+#work .row{
+  color: #ff9933;
+}
+.imgset img{
+    width: 180px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+/* industries */
+#industries{
+    height: 800px;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#industries .row{
+    margin-top: 50px;
+    color: #ff9933;
+}
+
+#industries .img{
+    position: relative;
+    left:140px;
+    bottom: 30px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	background-color: #fcb500;
+}
+.img i{
+    padding-top:20px ;
+    color: #000;
+}
+.title{
+    font-size: 24px;
+    padding-bottom: 5px;
+}
+#industries h6{
+    font-size: 12px;
+    color: #ff9933;
+}
+
+
+
+/*footer*/
+#footer-setting {
+    background:#ff9933;
+  }
+  
+#footer-setting h5 {
+      font-size: 1rem;
+      line-height: 1.375;
+      font-family: Rubik,Arial,sans-serif;
+      font-weight: 500;
+      color: #fff;
+  }
+  
+  #footer-setting a{
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  #footer-setting a:hover {
+    color:#b8bbca;
+    text-decoration: none;
+  }
+  
+  #footer-setting div .title{ 
+      font-size: 2rem;
+      color: #fff;
+  }
+  
+  #footer-setting div .rights .copy-right{
+      font-size: 12px;
+  }
+  #footer-setting p{
+      color: #ffff;
+  }
+  /*social-icon */
+  #footer-setting .social a{
+      color: rgb(247, 236, 236) !important;
+  }
+  #footer-setting .social .fa-twitter:hover{
+      color: #009bfc !important;
+  }
+  #footer-setting .social .fa-facebook:hover{
+      color: #0058fc !important;
+  }
+  #footer-setting .social .fa-google-plus:hover{
+      color: #fc1808 !important;
+  }
+  #footer-setting .social .fa-linkedin:hover{
+      color: #070eeb !important;
+  }
+
+/* top button */
+#myBtn{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ff9933; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  width:50px;
+  padding: 10px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+/*media*/
+@media only screen and (min-width: 424px) and (max-width:480px) {
+
+    .navbar{
+        width: 100%;
+    }
+
+   .navbar-brand{
+    font-size:18px;
+  }
+  
+  .carousel-inner{
+    height: 300px;
+   
+  }
+  .carousel-caption{
+   width: 70%;
+   
+
+  }
+  .carousel .navigation{
+    padding-top: 15%;
+    }
+  .carousel-caption h5{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .carousel-caption h4{
+    font-size: 16px;
+  }
+
+  #work{
+    height: 50%;
+  }
+  #work span{
+    font-size: 2rem;
+  } 
+  #work span:before{
+    width: 35%;
+    margin-top: 10%;
+    margin-left: 7%;
+  }
+  #work h3{
+      font-size: 1.3rem;
+      font-weight: 700;
+  }
+  .imgset{
+    padding-top: 2%;
+  }
+  
+  .imgset img{
+    height: 90px;
+    width: 90px;
+  }
+  
+  #work .rowset{
+    margin-top:0;
+  }
+  
+  #industries{
+    height: 50%;
+  }
+  
+  #industries span{
+    font-size: 2rem;
+  }
+  #industries span:before{
+    width: 20%;
+    margin-top: 10%;
+    margin-left: 6%;
+  }
+  #industries .row{
+      margin-top: 0;
+  } 
+  #industries .icon{
+    padding-top: 20%;
+  }
+  
+  #industries .img{
+   position: relative;
+   left: 38%;
+  }
+  
+}
+@media only screen and (min-width: 440px){
+    #industries .img{
+        left: 37%;
+       } 
+}
+@media only screen and (min-width: 450px){
+    #industries .img{
+        left: 38%;
+       } 
+}
+@media only screen and (min-width: 460px){
+    #industries .img{
+        left: 39%;
+       } 
+}
+@media only screen and (min-width: 475px){
+    #industries .img{
+        left: 40%;
+       } 
+}
+@media only screen and (min-width: 480px){
+    #industries .img{
+        left: 41%;
+       } 
+}
+@media only screen and (min-width: 320px) and (max-width:423px) {
+
+    .navbar{
+        width: 100%;
+    }
+
+   .navbar-brand{
+    font-size:1rem;
+  }
+  .navbar-brand .badge{
+      width: 15%;
+      font-size: 6px!important;
+  }
+  
+  /* .carousel-inner{
+    height: 300px;
+   
+  } */
+  .carousel .navigation{
+      padding-top: 20%;
+  }
+  .carousel-caption{
+   width: 70%;
+  
+
+  }
+  .carousel-caption h5{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .carousel-caption h4{
+    font-size: 16px;
+  }
+  /* about */
+.about-inner{
+  flex-direction: column;
+}
+.left{
+  padding-top: 10px;
+}
+.right{
+  display: none;
+}
+
+  #work{
+    height: 50%;
+  }
+  #work span{
+    font-size: 1.5rem;
+  } 
+  #work span:before{
+    width: 28%;
+    margin-top: 10%;
+    margin-left: 7%;
+  }
+  #work h3{
+      font-size: 1rem;
+      font-weight: 700;
+  }
+  .imgset{
+    padding-top: 2%;
+  }
+  
+  .imgset img{
+    height: 80px;
+    width: 80px;
+  }
+  
+  #work .rowset{
+    margin-top:0;
+  }
+  
+  #industries{
+    height: 50%;
+  }
+  
+  #industries span{
+    font-size: 1.6rem;
+  }
+  #industries span:before{
+    width: 23%;
+    margin-top: 10%;
+    margin-left: 6%;
+  }
+
+  #industries .rowset{
+      padding-top: 1%;
+  }
+  #industries .icon{
+    padding-top: 20%;
+  }
+  #industries .descrption{
+      text-align:left;
+  }
+  
+  
+  #industries .img{
+   position: relative;
+   left: 35%;
+  }
+  
+}
