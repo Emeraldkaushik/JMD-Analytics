@@ -25,7 +25,7 @@ SECRET_KEY = '6q^_qp23z0&va*s1^znngoi42lrj4sl%s-izl#*v3@@1cn(&tv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '52.66.248.111']
+ALLOWED_HOSTS = ['*', '52.66.247.247', 'www.jmdanalytics.in']
 
 
 # Application definition
