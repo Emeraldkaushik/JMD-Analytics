@@ -1,479 +1,827 @@
 {% load static %}
-<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    
+
 <head>
-    <title>JMD Analytics</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>JMD Analytics </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="manifest" href="site.html">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'priya/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/meanmenu.css' %}" >
+        <link rel="stylesheet" href="{% static 'priya/css/fontawesome-all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/slick.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/dripicons.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/themify-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/default.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'priya/css/responsive.css' %}">
+    </head>
+    <body>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-
-    <link rel="icon" type="image/png" href="images/logo.png"/>
-
-    <link rel="stylesheet" href="{% static 'css/webstyle.css' %}">
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-            <a class="navbar-brand  ml-3 " href="#">
-            <span class="pr-3">JMD Analytics</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav ml-auto  ">
-                <li class="nav-item  ">
-                  <a class="nav-link nav-link-ltr active" href="index.html">Home </a>
-                </li>
-                <li class="nav-item  ">
-                  <a class="nav-link nav-link-ltr"  href="#services">Services</a>
-                </li>
-                <li class="nav-item  ">
-                  <a class="nav-link nav-link-ltr" href="#about">About</a>
-                </li>
-                <li class="nav-item  "> 
-                  <a class="nav-link nav-link-ltr" href="#footer-setting">Contact </a>
-                </li>
-              </ul>
-               <a class="btn btn-outline-dark menu-right-btn my-2 my-sm-0" href="login.html">LOGIN</a>  
-            </div>
-          </nav>
-    </header>
-    <section id="slider" class="">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="width: 10px;height: 10px; border-radius: 50%;"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"  style="width: 10px;height: 10px;border-radius: 50%;"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"  style="width: 10px;height: 10px;border-radius: 50%;"></li>
-            </ol>
-            <div class="carousel-inner">
-              <!-- <div class="carousel-item active">
-                <img class="d-block w-100" src="images/11.jpg" alt="First slide">
-                <div class="carousel-caption d-md-block">
-                  <h5 class="display-3 text-white text-bold">JMD Analytics</h5>
-                  <h4 class="text-uppercase">We Are Here for You</h4>
-                </div>
-              </div> -->
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="{% static 'images/web_development1.jpg' %}" alt="Second slide">
-              </div>
-              <!-- <div class="carousel-item">
-                <img class="d-block w-100" src="images/13.jpg" alt="Third slide">
-              </div> -->
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    </section>
-    <div data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" tabindex="0">
-    <section id="about">
-     <div class="container py-4">
-      
-     
-      <div class="about-inner">
-
-        <div class="left">
-          <p>
-            JMD started operation in 2020. <br>
-            We are a well-qualified and trusted Website Development Company <br>
-            that is committed to enhancing customer satisfaction. <br>
-            With hands-on Digital Marketing , Analytics and <br>
-            Website Development Services of E-commerce , Real Estate , <br>
-            Hotels ,Tours &  Travels , Healthcare and Government Portals. <br>
-            JMD ANALYTICS is top developer in MUMBAI  <br>
-            that is always ready to turn your imagination <br>
-            into reality as we , a dedicated set of professionals aim <br>
-            to provide you with the best results.
-          </p>
-        </div>
-        <div class="right">
-          <h3 class="mb-auto mt-4">JMD ANALYTICS</h3>
-          <img class="my-2" src="{% static 'images/office_man.png' %} " alt="">
-          <h3 class="mt-auto mb-4" >About Us</h3>
-        </div>
-      </div>
-
-     </div>
-    </section>
-
-    <section id="services">
-      <div class="container text-center" >
-         <div class="top-title">
-          <h1>Services</h1>
-         </div>
-
-        <div class="row text-center mt-2" style="color: #ff9933;">
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/web dev.png' %}" alt="" width="90" height="90">
-            <h5> <b>Web and Software Development</b> </h5>
-            <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/data_science.png' %}" alt="" width="100" height="100">
-            <h5><b>Data Analysis and Data Science</b></h5>
-            <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/Machine Learning.png' %}" alt="" width="100" height="100">
-            <h5><b>ML and AL</b></h5>
-            <p>Artificial Intelligence is
-               the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-      
-      
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/tools.png' %}" alt="" width="100" height="100">
-            <h5><b>Design Services</b></h5>
-            <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/mobile_app.png' %}" alt="" width="100" height="100">
-            <h5><b>Mobile App Development</b></h5>
-            <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-          <div class="col-md-4 mt-2">
-            <img src="{% static 'images/dashboard.png' %}" alt="" width="100" height="100">
-            <h5><b>Dynamic Dashboard</b></h5>
-            <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems 
-              ,natural language processing (NLP) ,speech recognition.
-            </p>
-          </div>
-        
-      </div>
-
-    </section>
-
-    <section id="work">
-        <div class="container text-center">
-            <div class="top-title">
-              <h1>How we work</h1>
-            </div>
+    <!-- header-start -->
+    <header class="header-transparent">
+      <div id="sticky-header" class="main-menu-area menu-area-2">
+        <div class="container">
+          <div class="menu-bg">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
-                   <div class="container">
-                     <div class="row">
-                       <div class="clo-5 imgset">
-                         <img  src="{% static 'images/ml.png' %}" alt="">
-                       </div>
-                       <div class="col-8 pl-4">
-                        <h3 class="text-left"> <b> ML or AI Projects   </b> </h3>
-                        <p class="text-left">Mosaic solves some of the most pressing data challenges facing businesses today.
-                           No matter how far you are on the analytics maturity
-                           curve, Mosaic can provide additional bandwidth or a quick-win to build momentum.
-                        </p>
-                       </div>
-                     </div>
-                   </div>
+              <div class="col-xl-3 col-lg-3 d-flex align-items-center">
+                <div class="logo">
+                  <a href="index.html"><img src="" alt="" /> JMD Analytics</a>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
-                  <div class="container">
-                    <div class="row ">
-                      <div class="clo-5 imgset">
-                        <img src="{% static 'images/data_scientist.jfif' %}" alt="">
-                      </div>
-                      <div class="col-8 pl-4">
-                        <h3 class="text-left"> <b> Rent a Data Scientist </b> </h3>
-                        <p class="text-left">
-                          Many firms tell us they have data science projects they’d like to start immediately, but they lack the relevant data science expertise or enough data scientists during peak demand times. If that’s your situation, Mosaic is happy 
-                          to “rent” you a data scientist (or two) at an hourly rate, with the right skillset, part-time or full-time.
-                        </p>
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-            </div>
-            <div class="row rowset">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
-                 <div class="container">
-                   <div class="row">
-                     <div class="clo-5 imgset">
-                       <img src="{% static 'images/science.jfif' %}" alt="">
-                     </div>
-                     <div class="col-8 pl-4">
-                      <h3 class="text-left"> <b> Data Science Capability Development </b> </h3>
-                      <p class="text-left">
-                        Mosaic helps companies of all shapes and sizes be more strategic about their use of predictive and prescriptive analytics. We have performed data science assessments for companies in Retail,
-                         Supply Chain, Healthcare, Professional Services, Consumer Goods, Financial Services, and Energy.
-                      </p>
-                     </div>
-                   </div>
-                 </div>
               </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-12 pt-4">
-                <div class="container">
-                  <div class="row">
-                    <div class="clo-5 imgset">
-                      <img src="{% static 'images/growth.jfif' %}" alt="">
-                    </div>
-                    <div class="col-8 pl-4">
-                      <h3 class="text-left"> <b> Business Deployment </b> </h3>
-                      <p class="text-left">
-                        Mosaic can provide best practices around data engineering, making sure your technology is aligned with your analytic goals. Our deep expertise developing and deploying decision support capabilities for numerous clients gives us a unique 
-                        perspective in how to run a successful analytically-driven architecture project.
-                      </p>
+              <div class="col-xl-9 col-lg-9">
+                
+                <div class="main-menu text-right">
+                  <nav id="mobile-menu">
+                    <ul>
+                      <li class="active"><a href="#">home </a>
+                        
+                      </li>
+
+                      <li><a href="#">About Us</a>
+                        
+                      </li>
+                      
+                      <li><a href="#">Services</a>
+                        
+                      </li>
+                      
+                      <li><a href="#">portfolio</a>
+                        
+                      </li>
+                      
+                      <li><a href="#">contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="mobile-menu"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+    <!-- header-end -->
+
+
+    <!-- slider-start -->
+  <div class="about-home bg-light">
+    <div class="slider-area">
+      <div class="slider-wrapper">
+        <div class="single-slider slider-height" style="background-image:url({% static 'priya/img/slider/slide.png' %} )">
+          <div class="container">
+            <div class="row ">
+              <div class="col-xl-8 offset-xl-2">
+                <div class="slider-content slider-2-content text-center">
+                  <h1 data-animation="fadeInUp" data-delay=".6s">Welcome to JMD Analytics</h1>
+                  <p>JMD ANALYTICS is the top developer in MUMBAI that is always ready to turn your imagination into reality as we, a dedicated set of professionals aim to provide you with the best results.</p>
+                </div>
+                <div class="slider-shape-rocket text-center">
+                  <img class="bounce-animate" src="{% static 'priya/img/bg/slider-shape.png' %}" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+    <!-- slider-start -->
+
+    <section>
+
+    <div class="top-up">
+      <div class="container">
+      <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="icon-box s3 box-hover-gradient text-center">
+                                    
+                                    <div class="icon-main">
+                                        <img class="bnicon" src="{% static 'priya/img/icon/ai.png' %}"> 
+                                    </div>
+                                  
+                                        <h5>ML or AI Projects</h5>
+                                        <p>JMD Analytics solves some of the most pressing data challenges facing businesses today. No matter how far you are on the analytics maturity curve,  JMD Analytics can provide additional bandwidth or a quick win to build momentum.</p>
+                                  
+                                    <!-- <div class="action-box">
+                                        <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                                    </div> -->
+                                        
+                                </div>
+                              </div>  
+                           
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 m-t50">
+                                <div class="icon-box s3 box-hover-gradient text-center">
+                                    
+                                   
+                                    <div class="icon-main">
+                                        <img class="bnicon" src="{% static 'priya/img/icon/data-scientist.png' %}"> 
+                                    </div>
+                                    
+                                        <h5>Rent a Data Scientist</h5>
+                                        <p>Many firms tell us they have data science projects they’d like to start immediately, but they lack the relevant data science expertise or enough data scientists during peak demand times. If that’s your situation, JMD Analytics is happy to “rent” for the best results.</p>
+                                  
+                                    <!-- <div class="action-box">
+                                        <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                                    </div> -->
+                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 xs-m-t50">
+                                <div class="icon-box s3 box-hover-gradient text-center">
+                                    
+                                    
+                                    <div class="icon-main">
+                                        <img class="bnicon" src="{% static 'priya/img/icon/science.png' %}"> 
+                                    </div>
+                                    
+                                        <h5>Data Science Potential Development</h5>
+                                        <p>JMD Analytics helps companies of all shapes and sizes be more strategic about their use of predictive and prescriptive analytics. We have performed data science assessments for companies in Retail, Supply Chain, Healthcare, Professional Services, Consumer Goods, Financial Services, and Energy.</p>
+                                   
+                                    <!-- <div class="action-box">
+                                        <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                                    </div> -->
+                                        
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 m-t50">
+                                <div class="icon-box s3 box-hover-gradient text-center">
+                                    
+                                    
+                                    <div class="icon-main">
+                                        <img class="bnicon" src="{% static 'priya/img/icon/progress-report.png' %}"> 
+                                    </div>
+                                    
+                                        <h5>Business Deployment</h5>
+                                        <p>JMD Analytics can provide best practices around data engineering, making sure your technology is aligned with your analytic goals. Our deep expertise in developing and deploying decision support capabilities for numerous clients gives us a unique perspective on how to run a successful analytically-driven architecture project.</p>
+                                  
+                                    <!-- <div class="action-box">
+                                        <a href="#" class="octf-btn octf-btn-icon octf-btn-white">Learn More<i class="flaticon-right-arrow-1"></i></a>
+                                    </div> -->
+                                        
+                                </div>
+                            </div>
+                        </div>
+
+                     </div>
+
+                  </div>
+
+            </section>
+
+           <div class="video-area pb-90 bg-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6">
+            <div class="agency-wrapper mb-30">
+              <div class="section-title">
+                <h1>About Us</h1>
+                <div class="section-img mb-15">
+                  <img src="{% static 'priya/img/shape/section.png' %}" alt="">
+                </div>
+                <p>JMD started operation in 2020.
+We are a well-qualified and trusted Website Development Company
+that is committed to enhancing customer satisfaction.
+With hands-on Digital Marketing , Analytics and
+Website Development Services of E-commerce , Real Estate ,
+Hotels ,Tours & Travels , Healthcare and Government Portals.</p>
+<p>JMD ANALYTICS is top developer in MUMBAI
+that is always ready to turn your imagination
+into reality as we , a dedicated set of professionals aim
+to provide you with the best results.</p>
+              </div>
+              <div class="agency-button mt-30">
+                <a class="octf-btn octf-btn-secondary octf-btn-icon" href="#">Learn More <i class="dripicons-arrow-thin-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 offset-xl-1 col-lg-6">
+            <div class="agency-video mb-30">
+              <img class="bounce-animate" src="{% static 'priya/img/bg/social-banner.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
+
+     <div class="container">
+
+      <div class="section-title  text-center mb-75">
+              <span>our services</span>
+              <h1>We Provide Dedication <br>Service For You</h1>
+              <div class="section-img">
+                <img src="img/shape/section.png" alt="">
+              </div>
+            </div>
+
+
+    <div class="icon-box-grid text-center m-t--295">
+                 <div class="row">
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box text">
+                                <div class="icon-main">
+                                     <img src= "{% static 'priya/img/icon/monitor.png'  %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Web Design & Development</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>UI & UX Design</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                      <img src= "{% static 'priya/img/icon/data.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>E-Commerce App Development</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/artificial-intelligence.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Software Development</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/plan.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Mobile App Development</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                    <img src="{% static 'priya/img/icon/smartphone.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Data Science Project</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Machine Learning & Artificial Intelligence Project</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>ChatBot Project</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Dashboard Project</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Cloud Architect</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 no-padding">
+                            <div class="icon-box">
+                                <div class="icon-main">
+                                     <img src="{% static 'priya/img/icon/home.png' %}">
+                                </div>
+                                <div class="content-box">
+                                    <h5>Digital Marketing</h5>
+                                    <!-- <p>Artificial Intelligence is the simulation of human intelligence processes by machines especially computer systems ,natural language processing (NLP) ,speech recognition.</p> -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                   </div>
-                </div> 
+             </div>
+
+
+
+      <!-- faq-area start -->
+    <div class="faq-area pt-115 pb-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6">
+            <div class="faq-img mb-30">
+              <img class="bounce-animate" src="{% static 'priya/img/bg/why.png' %}" >
+            </div>
+          </div>
+          <div class="col-xl-6 offset-xl-1 col-lg-6">
+            <div class="faq-box mb-30">
+              <div class="section-title">
+                
+                <h1>Work with this Industries</h1>
+                <div class="section-img">
+                  <img src="{% static 'priya/img/shape/section.png' %}" alt="">
+                </div>
+              </div>
+              <div id="accordion" class="mt-40">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        TOURISM AND HOSPITALITY
+                      </a>
+                    </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        SCIENCE AND TECHNOLOGY
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        PHARMACEUTICALS
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        FINANCIAL SERVICES
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        MANUFACTURING
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                      <a href="#" class="btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseSix">
+                        RETAIL
+                      </a>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam quinostrud exercitation.</p> -->
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-        </div>
-  </section>
+          </div>
 
-    <section id="industries">
-      <div class="container text-center">
-        <div class="top-title">
-           <h1>Industries</h1>
         </div>
-        <div class="head-title">
-        <div class="row d-flex justify-content-center">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
-              <div class="img">
-                <i class="fas fa-bicycle fa-3x"></i>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- blog-area-start -->
+    <div class="blog-area pt-115 pb-120" style="background-image: linear-gradient( 
+145deg
+ , #0039e4, #04dbf1);
+}">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
+            <div class="section-title white-title text-center mb-70">
+              
+              <h1>Case Study / Portfolio</h1> 
+              <p style="color: white;">
+                You can review 7 Projects with 100% Achievement.
+              </p>
+              <div class="section-img">
+                <img src="img/shape/section.png" alt="" />
               </div>
-              <div class="title">Transport</div>
-              <h6>LAND | SEA | AIR</h6>
-              <div class="descrption">
-                Mosaic’s roots run over 15 years’ deep in the transportation and logistics industry.
-                We have proven experience solving some of the industry’s most intractable data challenges.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p6.png' %}" alt=""></a>
               </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">A K Fresh Food</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-12 icon">
-            <div class="img">
-              <i class="fas fa-gas-pump fa-3x"></i>
-             </div>
-             <div class="title">Energy</div>
-             <h6>UTILITIES | OIL & GAS | SOLAR</h6>
-             <div class="descrption">
-              Mosaic helps firms across the energy
-               spectrum apply AI and ML to their businesses, helping leaders make smarter decisions.
-             </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p4.png' %}"alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">Chavan Brothers</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-12 icon">
-            <div class="img">
-              <i class="fas fa-shopping-cart fa-3x"></i>
-             </div>
-             <div class="title">Consumer Products</div>
-             <h6>FOOD & BEVERAGES | HOUSEHOLD GOODS | ELECTRONICS</h6>
-             <div class="descrption">
-              Mosaic’s data-driven insights help consumer product manufacturers and
-              distributors reinforce their decision-making processes, making substantial impacts on the bottom line.
-             </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p1.png'%}" alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">A V Cold Storage & General Store</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p5.png'%}" alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">Annu Medical</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p3.png'%}" alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">Koli Fusion</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/blog/blog3.jpg'%}" alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">Suved Distributor</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="blog-wrapper mb-30">
+              <div class="blog-img">
+                <a href="blog-details.html"><img src="{% static 'priya/img/p2.png'%}" alt=""></a>
+              </div>
+              <div class="blog-text">
+                <h4><a href="blog-details.html">Ganimikawa Shares</a></h4>
+                <a href="blog-details.html">Read More <i class="dripicons-arrow-thin-right"></i></a>
+                <!-- <div class="blog-meta">
+                  <span> <i class="dripicons-calendar"></i> 05 Feb 2019</span>
+                  <span> <i class="dripicons-heart"></i> Comments (03)</span>
+                </div> -->
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row  d-flex justify-content-center">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-12 ">
-            <div class="img">
-              <i class="fas fa-briefcase-medical fa-3x"></i>
-             </div>
-             <div class="title">Healthcare</div>
-             <h6>PAYER | PROVIDER | PHARMA</h6>
-             <div class="descrption">
-              Mosaic unlocks actionable insights for many players within the healthcare ecosystem, creating efficiencies and driving improvements in patient care.
-             </div>
+
+            
+
+
+
+
+
+
+        <div class="brand-area pt-20">
+          <div class="row">
+            <div class="brand-active owl-carousel">
+              <div class="col-xl-12">
+                  <div class="brand-img text-center">
+                    <img src="{% static 'priya/img/brand/1.png' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="brand-img text-center">
+                    <img src="{% static 'priya/img/brand/2.png' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="brand-img text-center">
+                    <img src="{% static 'priya/img/brand/3.png' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="brand-img text-center">
+                    <img src="{% static 'priya/img/brand/4.png' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="brand-img text-center">
+                    <img src="{% static 'priya/img/brand/5.png' %}" alt="" />
+                  </div>
+                </div>
+                <div class="col-xl-12 text-center">
+                <div class="brand-img">
+                  <img src="{% static 'priya/img/brand/6.png' %}" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-12">
-            <div class="img">
-              <i class="fas fa-industry fa-3x"></i>
-             </div>
-             <div class="title">Retail</div>
-             <h6>BRICK & MORTAR | DIGITAL | WAREHOUSE</h6>
-             <div class="descrption">
-              Mosaic deploys data science tools to all aspects of the retail business, from supply chain to customer segmentation, helping retailers tie the big picture together and plan more effective strategies.
-             </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-12 icon">
-            <div class="img">
-              <i class="fas fa-project-diagram fa-3x"></i>
-             </div>
-             <div class="title">Manufacturing</div>
-             <h6>INDUSTRIAL | OEM | CONTRACT</h6>
-             <div class="descrption">
-              Mosaic partners with the world's leading manufacturers to provide ROI-driven solutions.
-             </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-<!-- <div class="container">
-  <hr>
-</div> -->
-
-<section>
-  <div class="container mb-4">
-    <div class="top-title">
-      <h1>Portfolio</h1>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="width: 10px;height: 10px; border-radius: 50%;"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"  style="width: 10px;height: 10px;border-radius: 50%;"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"  style="width: 10px;height: 10px;border-radius: 50%;"></li>
-      </ol>
-      <div class="carousel-inner">
-        <!-- <div class="carousel-item active">
-          <img class="d-block w-100" src="images/11.jpg" alt="First slide">
-          <div class="carousel-caption d-md-block">
-            <h5 class="display-3 text-white text-bold">JMD Analytics</h5>
-            <h4 class="text-uppercase">We Are Here for You</h4>
-          </div>
-        </div> -->
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="{% static 'images/web_development1.jpg' %}" alt="Second slide">
-        </div>
-        <!-- <div class="carousel-item">
-          <img class="d-block w-100" src="images/13.jpg" alt="Third slide">
-        </div> -->
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="fas fa-arrow-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="fas fa-arrow-left " aria-hidden="true" style="color: black;"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-
-<!-- Section: Team v.2 -->
-
-<footer id="footer-setting">
-  <div class="container pt-5">
-    <div class="row">
-      <div class="col-md-3 col-sm-12  text-left">
-        <span class="text-left font-weight-bold title">JMD Analytics</span>
-        <ul class="list-group rights">
-         <li class="list-group-item bg-transparent border-0 p-0 ">
-          <p>
-            JmdAnalytics for small and medium-sized employers.
-          </p>
-         </li>
-         <ul class=" d-flex list-unstyled ml-2 mb-3 social">
-          <li class=" bg-transparent border-0 p-0 mb-2">
-            <a href="#"><i class="fab fa-linkedin mr-1"></i></a>
-          </li>
-          <li class=" bg-transparent border-0 p-0 mb-2">
-            <a href="#"><i class="fab fa-twitter ml-3"></i></a>       
-          </li>
-          <li class=" bg-transparent border-0 p-0 mb-2">
-            <a href="#" target="_blank"><i class="fab fa-google-plus ml-3"></i></a>  
-          </li>
-          <li class="bg-transparent border-0 p-0 mb-2">
-            <a href="#" target="_blank"><i class="fab fa-facebook ml-3"></i></a>
-          </li>
-         </ul> 
-         <li class="list-group-item bg-transparent border-0 p-0 mb-2 copy-right">
-             <p>Copyright © 2017. All Rights Reserved</p>
-         </li> 
-         <li class="list-group-item bg-transparent border-0 p-0 mb-2 copy-right">
-            <a href="#">Privacy Policy</a>
-            <span style="color: #b8bbca;">|</span>
-            <a href="#">Terms & Condition</a>
-         </li> 
-        </ul>
-      </div>
-
-      <div class="col-md-9 col-sm-12">
-
-        <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
-          <h5 class="mb-4 font-weight-bold text-uppercase">company</h5>
-          <ul class="list-group">
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Sales</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Project Management</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Workforce</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"> E-Commerce</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Finance</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Business Apps</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-2 col-sm-6 col-6 p-0 mb-3 float-left">
-          <h5 class="mb-4 font-weight-bold text-uppercase">product</h5>
-          <ul class="list-group">
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Open Source</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Technology</a></li>
-          </ul> 
-        </div>
-
-        <div class="col-md-2 col-sm-6 col-6 mb-3 p-0 float-left">
-          <h5 class="mb-4 font-weight-bold text-uppercase">learn</h5>
-          <ul class="list-group">
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"></i>About</a></li>
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"></i> Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-6 mb-3 p-0 float-left">
-          <h5 class="mb-4 font-weight-bold text-uppercase">Contact</h5>
-          <ul class="list-group">
-            <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-             <p>505 Montgomery Street, Suite 2300 San Francisco CA 94111 415-593-1189</p>
-            </li>
-             <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-             <p>145 E Mountain Avenue Fort Collins CO B0524 415-593-1169</p>
-            </li>
-            </li>
-             <li class="list-group-item bg-transparent border-0 p-0 mb-2">
-             <a>support@example.com</a>
-            </li>
-          </ul>
-        </div>
-
       </div>
     </div>
-  </div>
-</footer>
-</div>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
-<!-- <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-arrow-up"></i></a> -->
+    <!-- brand-area-end -->
 
-<script>
+    <!-- footer-area-start -->
+    <div class="footer-area footer-white primary-bg pt-90">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="footer-wrapper mb-30">
+              <div class="footer-logo">
+                <a href="index.html"><img src="" alt="">JMD Analytics</a>
+              </div>
+              <div class="footer-text">
+                <p>JMD ANALYTICS is the top developer in MUMBAI that is always ready to turn your imagination into reality as we, a dedicated set of professionals aim to provide you with the best results.</p>
+              </div>
+              <div class="footer-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="footer-wrapper pl-30 mb-30">
+              <h3 class="footer-title">Company Services</h3>
+              <ul class="footer-menu">
+                <li><a href="#">Web Design & Development</a></li>
+                <li><a href="#">E-Commerce App Development</a></li>
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Mobile App Development</a></li>
+                <li><a href="#">Data Science Project</a></li>
+                <li><a href="#">Machine Learning & Artificial Intelligence Project</a></li>
+                <li><a href="#">ChatBot Project</a></li>
+                <li><a href="#">Dashboard Project</a></li>
+                <li><a href="#">Cloud Architect</a></li>
+                <li><a href="#">Digital Marketing</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-xl-4 col-lg-4 col-md-6">
+            <div class="footer-wrapper pl-40 mb-30">
+              <h3 class="footer-title">Contact Us</h3>
+              <ul class="contact-link">
+                <li>
+                  <div class="contact-address-icon">
+                    <i class="fas fa-home"></i>
+                  </div>
+                  <div class="contact-address-text">
+                    <h4>Our Office</h4>
+                    <p>18 / 277 Kannwar Nagar -1 <br> Vikhroli (E) Mumbai 83</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-address-icon">
+                    <i class="far fa-envelope-open"></i>
+                  </div>
+                  <div class="contact-address-text">
+                    <h4>Mail Us</h4>
+                    <p>support@jmdanalytics.in</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-address-icon">
+                    <i class="fas fa-headphones"></i>
+                  </div>
+                  <div class="contact-address-text">
+                    <h4>Call Us</h4>
+                    <p>+919137826518</p>
+                    <p>+919004721365</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom pt-60 pb-20">
+        <div class="container">
+          <div class="footer-border">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="copyright">
+                  <p><i class="far fa-copyright"></i> 2020 JMD Analytics. All Rights Reserved.</p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12">
+                <ul class="footer-bottom-link text-lg-right">
+                  <li><a href="#">Terms & Condition</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-area-end -->
+
+    <!-- Modal Search -->
+        <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <form>
+                        <input type="text" placeholder="Search here...">
+                        <button>
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
 
-mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+
+
+
+
+    <!-- JS here -->
+        <script src="{% static 'priya/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+        <script src="{% static 'priya/js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'priya/js/waypoints.min.js' %}"></script>
+        <script src="{% static 'priya/js/popper.min.js'%}"></script>
+        <script src="{% static 'priya/js/jquery.counterup.min.js' %}"></script>
+        <script src="{% static 'priya/js/jquery.countdown.min.js' %}"></script>
+        <script src="{% static 'priya/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'priya/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'priya/js/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'priya/js/jquery.meanmenu.min.js' %}"></script>
+        <script src="{% static 'priya/js/slick.min.js' %}"></script>
+        <script src="{% static 'priya/js/ajax-form.js' %}"></script>
+        <script src="{% static 'priya/js/wow.min.js' %}"></script>
+        <script src="{% static 'priya/js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'priya/js/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'priya/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'priya/js/plugins.js' %}"></script>
+        <script src="{% static 'priya/js/main.js' %}"></script>
+
+
+
+        <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/607c17caf7ce1827093b86cb/1f3ibpsto';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
+<!--End of Tawk.to Script-->
+    </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-</body>
+<!-- Mirrored from www.devsnews.com/template/siniko/siniko/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Apr 2021 06:34:43 GMT -->
+</html>
 </html>
