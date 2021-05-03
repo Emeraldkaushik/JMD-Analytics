@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click on the "Choose File" button to upload a file:</p>
+
+<form action="{% url 'whats_app_automation' %}" method="POSt" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+
+    <label>Upload Your Excel File</label>
+  <input type="file" id="" name="excel_file">
+
+  <label>Upload Your Image</label>
+  <input type="file" id="" name="image_file">
+  <button type="Submit">Upload</button>
+</form>
+
+</body>
+</html>
